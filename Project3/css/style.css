@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*  NAVIGATION MENU  */
+
+.container{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(64 43 43); */
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+.logo{
+    width: 3.5rem;
+    cursor: pointer;
+    padding-left: 4%;
+}
+
+.menu-icon{
+    width: 2rem;
+    cursor: pointer;
+    filter: invert();
+    padding-right: 4%;
+    display: none;
+    
+}
+nav{
+    flex: 2;
+    text-align: right;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(255, 106, 106);
+}
+
+/*  HOME  */
+.second-container{
+    height: 28rem;
+}
+.second-container::before{
+    content: "";
+    background: url(/Project3copy/image/bg.jpg) no-repeat center center/cover ;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+}
+.h-primary{
+font-size: 2.5rem;
+padding: 0.8rem;
+}
+.p-primary{
+    padding: 0.4rem;
+font-size: 1.2rem;
+}
+
+/*  OUR SERVICES  */
+
+.third-container{
+    /* height: 70vh; */
+    /* background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); */
+}
+
+.h2-primary{
+   font-size: 2rem; 
+   text-align: center;
+   padding-bottom: 50px;
+}
+.p-secondry{
+    text-align: center;
+    padding-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.parent{
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #00C9FF;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+.child{
+    height: auto;
+    width: 30vw;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 6px 18px 10px darkslategrey;
+}
+
+.child img{
+    height: 25vh;
+    width: 20vw;
+    display: block;
+    margin: auto;
+    padding: 10px 0 10px 0;
+    border-radius: 20px;
+}
+#ch1{
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+#ch2{
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+#ch3{
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+
+/*  OUR CLIENT  */
+
+.h2-primary-client{
+    font-size: 2rem; 
+   text-align: center;
+   padding: 50px 0 50px 0;
+}
+.child-2 img{
+    height: 50px;
+    width: 50px;
+}
+
+
+/*  CONTACT US  */
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    /* border-radius: 100px 75px 50px 25px/25px 50px 75px 100px; */
+    border-radius: 50% 20% / 10% 40%;
+}
+
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    width: 50%;
+    margin: 10px;
+    border-radius: 10px;
+}
+.p-conus{
+    font-size: 1.8rem;
+    word-wrap: break-word;
+}
+.form-group input[type='submit']{
+    cursor: pointer;
+}
+
+
+
+/*  FOOTER  */
+
+.footer{
+    background-color: black;
+    height: 6rem;
+    margin-top: 3rem;
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+
+/* RESPONSIVE SECTION  */
+
+@media screen and (max-width: 938px) {
+    .h-primary{
+        font-size: 1.5rem;
+        padding: 0.8rem;
+        /* margin-top: 188px; */
+        }
+        .p-primary{
+            padding: 0.4rem;
+        font-size: 1rem;
+        }
+  }
+
+@media screen and (max-width: 783px) {
+        .p-primary{
+            padding: 0.4rem;
+        font-size: 0.8rem;
+        }
+  }
+
+  @media screen and (max-width: 300px) {
+    .h-primary{
+        font-size: 1.2rem;
+        padding: 0.8rem;
+        }
+    
+    .p-primary{
+        padding: 0.4rem;
+    font-size: 0.7rem;
+    }
+    .footer{
+font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width:730px) {
+    nav ul{
+        width: 100%;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        display: none;
+    }
+}
