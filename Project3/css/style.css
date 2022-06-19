@@ -81,11 +81,6 @@ font-size: 1.2rem;
 
 /*  OUR SERVICES  */
 
-.third-container{
-    /* height: 70vh; */
-    /* background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); */
-}
-
 .h2-primary{
    font-size: 2rem; 
    text-align: center;
@@ -160,7 +155,6 @@ font-size: 1.2rem;
     height: auto;
     width: auto;
     flex-wrap: wrap;
-    /* border-radius: 100px 75px 50px 25px/25px 50px 75px 100px; */
     border-radius: 50% 20% / 10% 40%;
 }
 
@@ -203,9 +197,8 @@ font-size: 1.2rem;
     .h-primary{
         font-size: 1.5rem;
         padding: 0.8rem;
-        /* margin-top: 188px; */
-        }
-        .p-primary{
+        
+     .p-primary{
             padding: 0.4rem;
         font-size: 1rem;
         }
@@ -246,7 +239,6 @@ font-size: 0.7rem;
         display: block;
         margin-top: 10px;
         margin-bottom: 10px;
-        text-align: center;
     }
 
     .menu-icon{
