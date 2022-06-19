@@ -7,9 +7,8 @@
     <title>Travell Agency</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
- 
-  <body>
 
+  <body>
     <!-- NAVIGATION MENU -->
 
     <div class="container">
@@ -23,7 +22,12 @@
             <li><a href="#">CONTACT US</a></li>
           </ul>
         </nav>
-        <img src="image/menu.png" alt="" class="menu-icon" onclick="togglemenu()" />
+        <img
+          src="image/menu.png"
+          alt=""
+          class="menu-icon"
+          onclick="togglemenu()"
+        />
       </div>
     </div>
 
@@ -46,25 +50,19 @@
     <!-- OUR SERVICES -->
 
     <div class="third-container">
-      <h2 class="h2-primary" >OUR SERVICES</h2>
+      <h2 class="h2-primary">OUR SERVICES</h2>
       <div class="parent">
         <div class="child" id="ch1">
-            <img src="image/1.jpg" alt="">
-          <p class="p-secondry">
-            YOU can rent Thar.
-          </p>
+          <img src="image/1.jpg" alt="" />
+          <p class="p-secondry">YOU can rent Thar.</p>
         </div>
         <div class="child" id="ch2">
-            <img src="image/2.jpg" alt="">
-          <p class="p-secondry">
-            YOU can rent Himalayan.
-          </p>
+          <img src="image/2.jpg" alt="" />
+          <p class="p-secondry">YOU can rent Himalayan.</p>
         </div>
         <div class="child" id="ch3">
-            <img src="image/3.jpg" alt="">
-          <p class="p-secondry">
-            YOU can rent XUV.
-          </p>
+          <img src="image/3.jpg" alt="" />
+          <p class="p-secondry">YOU can rent XUV.</p>
         </div>
       </div>
     </div>
@@ -75,16 +73,16 @@
       <h2 class="h2-primary-client">OUR CLIENT</h2>
       <div class="parent">
         <div class="child-2" id="ch2-1">
-          <img src="image/m1.png" alt="">
+          <img src="image/m1.png" alt="" />
         </div>
         <div class="child-2" id="ch2-2">
-          <img src="image/t2.png" alt="">
+          <img src="image/t2.png" alt="" />
         </div>
         <div class="child-2" id="ch2-3">
-          <img src="image/h3.png" alt="">
+          <img src="image/h3.png" alt="" />
         </div>
         <div class="child-2" id="ch2-4">
-          <img src="image/to4.png" alt="">
+          <img src="image/to4.png" alt="" />
         </div>
       </div>
     </div>
@@ -95,38 +93,33 @@
       <h2 class="h2-primary-client">CONTACT US</h2>
       <div class="form-group">
         <p class="p-conus">Get in Touch</p>
-        <input type="text" placeholder="Enter your Name">
-        <input type="number" placeholder="Enter your Phone No">
-        <input type="email" placeholder="Enter your Email">
+        <input type="text" placeholder="Enter your Name" />
+        <input type="number" placeholder="Enter your Phone No" />
+        <input type="email" placeholder="Enter your Email" />
         <textarea cols="30" rows="5" placeholder="Enter your Query"></textarea>
-        <input type="submit" value="SEND ME">
+        <input type="submit" value="SEND ME" />
       </div>
     </div>
 
     <!-- FOOTER -->
-<div class="footer">
-    <p>
-      copyright &copy; www.globe-travell-agency.com All rights reserved.
-    </p>
-  </div>
+    <div class="footer">
+      <p>copyright &copy; www.globe-travell-agency.com All rights reserved.</p>
+    </div>
 
-  <script>
-    var menuList=document.getElementById("menuList");
-    var homeMenu=document.getElementById("homeMenu");
-    function togglemenu(){
-      if(menuList.style.display=="none"){
-        menuList.style.display="block";
-        menuList.style.background="linear-gradient(90deg, #4b6cb7 0%, #182848 100%)";
-        homeMenu.style.marginTop="188px";
-
+    <script>
+      var menuList = document.getElementById("menuList");
+      var homeMenu = document.getElementById("homeMenu");
+      function togglemenu() {
+        if (menuList.style.display == "none") {
+          menuList.style.display = "block";
+          menuList.style.background =
+            "linear-gradient(90deg, #4b6cb7 0%, #182848 100%)";
+          homeMenu.style.marginTop = "188px";
+        } else {
+          menuList.style.display = "none";
+          homeMenu.style.marginTop = "";
+        }
       }
-      else{
-        menuList.style.display="none";
-        homeMenu.style.marginTop="";
-      }
-    }
- 
-
-  </script>
+    </script>
   </body>
 </html>
