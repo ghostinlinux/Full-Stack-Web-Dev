@@ -246,5 +246,18 @@ font-size: 0.7rem;
     }
     #menuList{
         display: none;
+        
+    .child{
+        width: 100%;
+    }
+
+    .child img{
+        height: 25vh;
+        width: 70vw;
+        display: block;
+        margin: auto;
+        padding: 10px 0 10px 0;
+        border-radius: 20px;
+    }
     }
 }
